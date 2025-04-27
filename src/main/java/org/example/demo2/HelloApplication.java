@@ -16,11 +16,14 @@ public class HelloApplication extends Application {
             System.out.println("button clicked!");
         });
 
+
+
         StackPane root = new StackPane();
 
         root.getChildren().add(button);
 
         Scene scene = new Scene(root, 300, 300);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setTitle("My JavaFX app!");
         stage.setScene(scene);
 
