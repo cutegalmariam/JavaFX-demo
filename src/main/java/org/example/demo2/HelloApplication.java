@@ -17,7 +17,6 @@ public class HelloApplication extends Application {
         });
 
 
-
         StackPane root = new StackPane();
 
         root.getChildren().add(button);
@@ -25,6 +24,11 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(root, 300, 300);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setTitle("My JavaFX app!");
+
+        stage.setX(400);
+        stage.setY(200);
+        stage.setResizable(false);
+
         stage.setScene(scene);
 
         stage.show();
