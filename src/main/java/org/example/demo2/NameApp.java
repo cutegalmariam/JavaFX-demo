@@ -50,6 +50,7 @@ public class NameApp extends Application {
         VBox layOut = new VBox(10);
         layOut.getChildren().addAll(label, textField, button, tableView);
         Scene scene = new Scene(layOut, 300, 400);
+        scene.getStylesheets().add(getClass().getResource("nameAppStyle.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
 
